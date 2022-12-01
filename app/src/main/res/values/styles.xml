@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="TitlesText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/font_large</item>
+    </style>
+
+    <style name="Text">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+</resources>

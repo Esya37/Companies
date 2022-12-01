@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".fragments.CompanyDetailsFragment">
+
+
+        <TextView
+            android:id="@+id/tv_company_details_name"
+            style="@style/TitlesText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="By Park Inn.Ижевск" />
+
+        <TextView
+            android:id="@+id/tv_company_details_description"
+            style="@style/Text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@id/tv_company_details_name"
+            app:layout_constraintStart_toStartOf="@id/tv_company_details_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_company_details_name"
+            tools:text="Очень длинный текст, из-за которого пришлось добавить ScrollView" />
+
+        <TextView
+            android:id="@+id/tv_company_details_latitude"
+            style="@style/Text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@id/tv_company_details_name"
+            app:layout_constraintStart_toStartOf="@id/tv_company_details_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_company_details_description"
+            tools:text="Широта: 56.85152" />
+
+        <TextView
+            android:id="@+id/tv_company_details_longitude"
+            style="@style/Text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@id/tv_company_details_name"
+            app:layout_constraintStart_toStartOf="@id/tv_company_details_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_company_details_latitude"
+            tools:text="Долгота: 53.207789" />
+
+        <TextView
+            android:id="@+id/tv_company_details_site_address"
+            style="@style/Text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@id/tv_company_details_name"
+            app:layout_constraintStart_toStartOf="@id/tv_company_details_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_company_details_longitude"
+            tools:text="Сайт: www.sparta-fitness.ru" />
+
+        <TextView
+            android:id="@+id/tv_company_details_phone_number"
+            style="@style/Text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@id/tv_company_details_name"
+            app:layout_constraintStart_toStartOf="@id/tv_company_details_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_company_details_site_address"
+            tools:text="Номер телефона: +79875218872" />
+
+        <ImageView
+            android:id="@+id/iv_company_details_company_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/company_details_image_content_description"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_company_details_phone_number"
+            tools:src="@tools:sample/avatars" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

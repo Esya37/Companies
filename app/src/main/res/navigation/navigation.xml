@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/companiesFragment">
+
+    <fragment
+        android:id="@+id/companiesFragment"
+        android:name="com.example.companies.fragments.CompaniesFragment"
+        android:label="fragment_companies"
+        tools:layout="@layout/fragment_companies" >
+        <action
+            android:id="@+id/action_companiesFragment_to_companyDetailsFragment"
+            app:destination="@id/companyDetailsFragment"
+            app:enterAnim="@anim/from_right_to_center_animation"
+            app:exitAnim="@anim/from_100width_to_0width_animation"
+            app:popEnterAnim="@anim/from_0wight_to_100width_animation"
+            app:popExitAnim="@anim/from_center_to_right_animation" />
+    </fragment>
+    <fragment
+        android:id="@+id/companyDetailsFragment"
+        android:name="com.example.companies.fragments.CompanyDetailsFragment"
+        android:label="fragment_company_details"
+        tools:layout="@layout/fragment_company_details" />
+</navigation>

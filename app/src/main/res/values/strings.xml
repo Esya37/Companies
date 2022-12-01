@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Companies</string>
+    <string name="titles_companies">Компании</string>
+    <string name="company_details_latitude">Широта: %1$s</string>
+    <string name="company_details_longitude">Долгота: %1$s</string>
+    <string name="company_details_site_address">Сайт: %1$s</string>
+    <string name="company_details_phone_number">Номер телефона: %1$s</string>
+    <string name="company_details_image_content_description">Изображение, относящееся к компании</string>
+
+    <string name="empty_data_feminine">Не указана</string>
+    <string name="empty_data_masculine">Не указан</string>
 </resources>
